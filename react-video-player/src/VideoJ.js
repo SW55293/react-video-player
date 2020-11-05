@@ -4,6 +4,7 @@ import vid from './media/video-1.mp4';
 import pic from './media/pic-1.jpg';
 import './video.css';
 
+
 const VideoJ = () => {
 
     const video = vid;

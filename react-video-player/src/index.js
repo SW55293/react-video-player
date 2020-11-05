@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <VideoJ />
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

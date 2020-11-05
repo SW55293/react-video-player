@@ -9,7 +9,7 @@ const VideoJ = () => {
     const poster = pic;
    return (
       <div className= "App">
-          <h1>Video Player</h1>
+          <h1>React Video Player</h1>
           <VideoPlayer
               src={video}
               poster={poster}

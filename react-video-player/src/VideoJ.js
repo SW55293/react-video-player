@@ -2,6 +2,7 @@ import React from 'react';
 import VideoPlayer from 'react-video-js-player';
 import vid from './media/video-1.mp4';
 import pic from './media/pic-1.jpg';
+import './video.css';
 
 const VideoJ = () => {
 
@@ -14,7 +15,9 @@ const VideoJ = () => {
               src={video}
               poster={poster}
               width="720"
-              height="420" />
+              height="420"
+              playbackRates= {[0.5, 0.85, 1.00, 1.25]}
+              />
       </div>
 
    );

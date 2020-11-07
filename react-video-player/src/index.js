@@ -4,10 +4,14 @@ import './index.css';
 //import App from './App';
 import VideoJ from './VideoJ';
 import reportWebVitals from './reportWebVitals';
+import InfiniteScroll from 'react-infinite-scroller';
+import Drawer from '@material-ui/core/Drawer';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Drawer />
     <VideoJ />
+    <InfiniteScroll />
     
   </React.StrictMode>,
   document.getElementById('root')

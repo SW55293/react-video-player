@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import VideoPlayer from 'react-video-js-player';
 import './video.css';
-import InfiniteScroll from 'react-infinite-scroller';
 import Drawer from '@material-ui/core/Drawer';
 import clsx from 'clsx';
 import List from '@material-ui/core/List';
@@ -17,7 +16,6 @@ import ContactsIcon from "@material-ui/icons/Contacts";
 import { AppBar, IconButton, makeStyles, Toolbar } from '@material-ui/core';
 import vid from './media/video-1.mp4';
 import pic from './media/pic-1.jpg';
-
 import './video.css';
 
 const useStyles = makeStyles({
@@ -81,7 +79,7 @@ const VideoJ = () => {
         );
     return (
         <div className="App">
-            <AppBar position="static" style={{ background: '#2E3B55' }}>
+            <AppBar position="static" style={{ background: '#2E3B55'}}>
                 <Toolbar>
                     <IconButton onClick={toggleDrawer('left', true)}>
                     <MenuIcon style={{color:'white'}}/>
@@ -95,22 +93,12 @@ const VideoJ = () => {
                 </Drawer>
                 </React.Fragment>
             ))}
-            <h1 className='title'>Video Player</h1>
+            <h1 className='title'></h1>
             <VideoPlayer
                 src={video}
                 poster={poster}
                 playbackRates={[0.5, 0.85, 1.00, 1.25]}
             />
-
-        <InfiniteScroll
-             pageStart={0}
-             //loadMore={loadFunc}
-             hasMore={true || false}
-             loader={<div className="loader" key={0}>Loading ...</div>}
-         >
-             {video}
-         </InfiniteScroll>
-           
         </div>
 
 

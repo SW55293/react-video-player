@@ -1,1 +1,2 @@
-# react-video-player
+# React Video Player
+- Utilizes VideoJS

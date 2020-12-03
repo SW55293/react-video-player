@@ -9,10 +9,10 @@ import Scroll from './Scroll';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Drawer />
+    {/* <Drawer /> */}
     <VideoJ />
-    <MCarousel />
-    <Scroll />
+   {/* <MCarousel /> */}
+    {/* <Scroll /> */}
 
     </React.StrictMode>,
  
